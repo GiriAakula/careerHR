@@ -9,13 +9,21 @@ const firebaseConfig = {
     appId: "1:307417595171:web:3d0beb8161e7ec608ba096",
     measurementId: "G-MXJFZ5B5S8"
   };
-firebase.initializeApp(firebaseConfig);
 
+firebase.initializeApp(firebaseConfig);
 let dataBaseRef = firebase.database().ref('training');
 
-document.getElementById('training').addEventListener('submit', (e) => {
+document.getElementById('training').addEventListener('submit', async (e) => {
     e.preventDefault();
-    console.log('giri')
+   uploadResume(e.target.resume.files[0], e); 
+});
+
+function saveDataToDatabase(data){
+    let newRef = dataBaseRef.push()
+    newRef.set(data)
+};
+
+function buildObject(e, url){
     const data = {
         name : e.target.Fullname.value,
         phone : e.target.phoneNumber.value,
@@ -39,16 +47,31 @@ document.getElementById('training').addEventListener('submit', (e) => {
             weekend: e.target.Weekendbatches.checked
         },
         optionalCourse: e.target.technical.value,
-        comments:e.target.Comments.value
+        comments:e.target.Comments.value,
+        resume: url
+    };
+    return data;
+}
+function uploadResume(resume, e){
+    var storageRef = firebase.storage().ref('resumes/' + resume.name);
+    var task = storageRef.put(resume);
+    task.on('state_changed', function progress(snapshot) {
+        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        console.log(percentage)
+        document.getElementById('training').style.display = 'none';
+        document.querySelector('.progress').style.display = 'flex';
+        $('.progress-bar').css('width', percentage+'%').attr('aria-valuenow', percentage);        
 
-    }
-    saveDataToDatabase(data)
-    document.getElementById('training').style.display = 'none'
-    document.querySelector('.submit').style.display = 'block'
+    }, function error(err) {
+        console.log('error')
 
-});
-
-function saveDataToDatabase(data){
-    let newRef = dataBaseRef.push()
-    newRef.set(data)
-};
+    }, function complete() {
+        console.log('upload completed')
+        task.snapshot.ref.getDownloadURL().then( 
+            function(downloadURL) { 
+               let data = buildObject(e, downloadURL);
+               saveDataToDatabase(data);               
+               document.querySelector('.submit').style.display = 'block'
+        });
+    });
+}
