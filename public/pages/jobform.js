@@ -1,13 +1,13 @@
 // firebase authentication
-const firebaseConfig = {
-    apiKey: "AIzaSyCnBEWsATznzbfd0tYUbB8MR2-J8Mvdul4",
-    authDomain: "career-school-75f3d.firebaseapp.com",
-    databaseURL: "https://career-school-75f3d.firebaseio.com",
-    projectId: "career-school-75f3d",
-    storageBucket: "career-school-75f3d.appspot.com",
-    messagingSenderId: "307417595171",
-    appId: "1:307417595171:web:3d0beb8161e7ec608ba096",
-    measurementId: "G-MXJFZ5B5S8"
+var firebaseConfig = {
+    apiKey: "AIzaSyDPzfWo46cqqdQnsZNOT_xu0bf_BNeLEBE",
+    authDomain: "careerhr-1a9e3.firebaseapp.com",
+    databaseURL: "https://careerhr-1a9e3.firebaseio.com",
+    projectId: "careerhr-1a9e3",
+    storageBucket: "careerhr-1a9e3.appspot.com",
+    messagingSenderId: "471605720184",
+    appId: "1:471605720184:web:d6f3652ebb106abd8f298d",
+    measurementId: "G-BZXG75MWHW"
   };
 
 firebase.initializeApp(firebaseConfig);
