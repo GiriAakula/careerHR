@@ -28,7 +28,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="About.html">About Us</a>
                     </li>          
                     <li class="nav-item dropdown">
@@ -50,7 +50,7 @@
                         <a class="dropdown-item" href="joinOurTeam.html">Join our team</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a class="nav-link" href="Employers.html">Employers</a>
                     </li>
                     <li class="nav-item">
@@ -64,17 +64,70 @@
     <!-- content -->
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">About Us</h1>
+                  <h1 class="display-4">Employers</h1>
                   <br><br>
-                  <p class="lead">Careerschool HR Solutions is a growing HR Management and Training Consultancy providing professional HR consulting & Recruitment services ranging from placement of individual candidates to providing a fully outsourced human resources function to small, medium and larger organizations.</p>
-                  <br>
-                  <p class="lead">Careerschool identifies prospective candidates for all positions across levels in an organization, who can easily buy in to the goals of the organization and also adapt themselves with the culture of the organization.</p>
-                  <br>
-                  <p class="lead">We start with extensive and complete understanding of our clients. This means in-depth study of the organization from a holistic prospective including their culture, values, business model and strategic goals. We associate closely with our clients, helping to define what they need in and the talent who will shape the role to active the enterprise growth aspirations.</p>
-                  <br>
-                  <p class="lead">We focus on candidate’s career as well as client’s growth. We create a sense of inquisitiveness in a candidate by highlighting how the candidate will be benefited by joining an organization and give the candidate a detailed brief about the role we are processing him/her for. We give them insight on how the jobs are relevant to their experience and tell them which aspects of their resume make them a fit.</p>
-                  <br>
+                  <p class="lead">When you need the very best from your hiring, you need to commit to finding the best.</p>                  
+                  <p class="lead">Careerschool is a leader in the Indian  Recruitment and Staffing  industry. We're the largest Recruitment firm in Asia-Pacific specialising across verticals. We understand the role great talent plays in keeping your organisation performing at peak capacity.</p>                  
+                  <p class="lead">Get in touch & submit the form below.</p>
+                  <div class="submit" style="display: none;">
+                    <p class="lead text-center text-success">Your form has been submitted.</p>
                 </div>
+                <div class="progress" style="display: none;">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 20%"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="progressText"></div>
+                </div>
+  
+                <form id="employers">
+                  <div class="form-group">
+                      <label for="firstname">First name</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+                  </div>
+                  <div class="form-group">
+                      <label for="lastname">Last name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter your email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" class="form-control" id="company" placeholder="Enter your last name">
+              </div>
+              <div class="form-group">
+                <label for="inputState">Position Title</label>
+                <input id="position" type="text" class="form-control"
+                    placeholder="Enter your position title">
+              </div>
+                  <div class="form-group">
+                      <label for="phoneNumber">Phone Number</label>
+                      <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                      <small id="phoneNumberHelp" class="form-text text-muted">Enter your 10 digit phone number.</small>
+                  </div>
+                  
+                  
+                  <div class="form-group">
+                      <label for="Comments">Comments / Details</label>
+                      <textarea class="form-control" id="comments" rows="5" placeholder="Enter your comments"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="talent">Request Talent</label>
+                    <select class="form-control" id="talent">
+                      <option value="Request Talent">Request Talent</option>
+                      <option value="Request Meeting">Request Meeting</option>
+                      <option value="Request Advice">Request Advice</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <br><br>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+              </form>
+                </div>
+                
         </div>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
@@ -123,7 +176,7 @@
 
 </footer>
 <!-- Footer -->
-
-<script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="employers.js"></script>
 </body>
 </html>

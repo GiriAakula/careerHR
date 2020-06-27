@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-
-
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -20,7 +12,12 @@
   
 }
 
-
+html {
+    position: relative;
+}
+body{
+    margin: 0 0 100px;
+}
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -185,9 +182,42 @@ footer{
   .slick-arrow.slick-hidden {
       display: none;
   }
-/* testimonials start */
+/* banner start */
+.banner{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 18%;
+    width: 100%;
+    box-shadow: 10px 10px 1px #ddd, 0 10px 20px #ccc;
+}
+/* .left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.right {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    justify-content: end;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)   ;
+}
+.right button{
+    padding: 10px;
+}
+.btn1 {
+    width: 200px;
+}
+.btn2 {
+    width: 200px;
+} */
 
-/* testimonials end */
+/* banner end */
 @media (max-width: 992px) {
     .bigtext {
         font-size: 1.5rem;

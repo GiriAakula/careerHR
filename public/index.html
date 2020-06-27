@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>  
   <link href="style.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   
@@ -33,18 +33,31 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/About.html">About Us</a>
+          </li>          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Training
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pages/classroomtraining.html">Classroom Training</a>
+              <a class="dropdown-item" href="pages/onlinetraining.html">Online Training</a>
+              </div>                          
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Job Seekers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pages/findAJob.html">Find a Job</a>
+              <a class="dropdown-item" href="pages/joinOurTeam.html">Join our team</a>
+              </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/Career.html">Jobs</a>
+            <a class="nav-link" href="pages/Employers.html">Employers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/Training.html">Training</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/Career.html">Join Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/Contact.html">Contact Us</a>
+            <a class="nav-link" href="ContactFrom_v9/index.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -96,163 +109,87 @@
   </div>
 
   <!--- Cards -->
-  <div class="container">
     <div class="container-fluid">
-      <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;">
-        <h1 class="text-uppercase">Training</h1>
-      </div>
-      <div class="card-deck">
-        <div class="card">
-          <img src="images/sql.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SQL Module 1</h5>
-            <p class="card-text">In this course you are going to learn basics of SQL and databases in general.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">Show
-              More</button>
-            <!-- Modal data -->
-            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">SQL Module 1</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <ul>
-                      <li>Understanding Database</li>
-                      <li>Database Types</li>
-                      <li>Getting started</li>
-                      <li>SQL Overview</li>
-                      <li>Fundamental Concepts in query</li>
-                      <li>Relationships and Joins</li>
-                      <li>Strings and Numbers</li>
-                      <li>Date & Time</li>
-                      <li>Aggregates</li>
-                    </ul>
-                    <div class="fees">
-                      <span class="font-weight-bold">Course Duration - 2 weeks</span><br>
-                      <span class="font-weight-bold">Level - Beginner</span><br>
-                      <span class="font-weight-bold">Course Fees - 2500 INR + GST</span>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a role="button" target="_blank" href="https://forms.gle/7gTWHa3UxagRhS3d7"
-                      class="btn btn-primary">Register</a>
-                  </div>
-                </div>
-              </div>
+      <br><br>
+      <h1 class="text-center">Our Services</h1>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #f2d50f 0%,#da0641 100%);">
+            <h6 class="card-header">Recruitment Solutions</h6>
+            <div class="card-body">
+              <p class="card-text">The growth of any organization depends on the talent it has. That again, rests on the processes it follows for recruitment. Get the recruitment process right, and you virtually eliminate the risk of hiring the wrong person for the job. Get the process wrong, and you won't even attract applications from suitable candidates. <br>
+                HR India Solutions offers specialist recruitment solutions across wide ranging business functions. Our recruitment process is simple, yet value adding. It involves the understanding of your business and its hiring needs and based on the same, designing our search plan, perform the initial screening of the candidates and validate the credentials of the selected candidates by way of reference checks.
+              </p>
+              <br>
+              <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
             </div>
-            <!-- Modal data end -->
           </div>
         </div>
-        <div class="card">
-          <img src="images/sql.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SQL Module 2</h5>
-            <p class="card-text">This course will give a deep dive into SQL and relational databes in general.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal"
-              data-target="#exampleModalScrollable2">Show More</button>
-            <!-- Modal data -->
-            <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">SQL Module 2</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <ul>
-                      <li>Quick SQL Brushup</li>
-                      <li>Views and Subselects</li>
-                      <li>Transaction</li>
-                      <li>Triggers</li>
-                      <li>Simple CRUD Application</li>
-                      <li>Relationships and Joins</li>
-                      <li>Data Munging with SQL</li>
-                      <li>Window function and Ordering</li>
-                    </ul>
-                    <div class="fees">
-                      <span class="font-weight-bold">Course Duration - 2 weeks</span><br>
-                      <span class="font-weight-bold">Level - Advanced</span><br>
-                      <span class="font-weight-bold">Course Fees - 4000 INR + GST</span>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a role="button" target="_blank" href="https://forms.gle/7gTWHa3UxagRhS3d7"
-                      class="btn btn-primary">Register</a>
-                  </div>
-                </div>
-              </div>
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #f02fc2 0%,#6094ea 100%);">
+            <h6 class="card-header">Training</h6>
+            <div class="card-body">
+              <p class="card-text">In times when technology is de-skilling 75% of the population especially for countries which are
+                in the threshold of development, Training is necessary for the individual development and progress of the organization. There are data which speaks that out of the available pool of talent only 20 % fit the expectation of the job. When we speak about holistic development we have to focus on both Technical as well as Behavioural training. <br>
+                Training or rather learning and development which is more appropriate phrase is also a very powerful motivational tool.”Money” is not the sole motivator in the 21st century. People who work with organization seek more than just employment! They look at holistic development of self. Behavioural training plays a key role in bringing about “self awareness”. This is a pivotal factor in self development which triggers organizational development.
+              </p>
+              <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
             </div>
-            <!-- Modal data end -->
           </div>
         </div>
-        <div class="card">
-          <img src="images/datascience.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Data Science based on python and R</h5>
-            <p class="card-text">This Course will give a basic knowledge of data science topics and R programming
-              language.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal"
-              data-target="#exampleModalScrollable3">Show More</button>
-            <!-- Modal data -->
-            <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">Data Science</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <ul>
-                      <li>Intro to SQL Concepts</li>
-                      <li>Overview of python</li>
-                      <li>Data Munging with python</li>
-                      <li>Advance plotting with python</li>
-                      <li>Basic stats</li>
-                      <li>Intro to Data Science</li>
-                      <li>Regression - Case Study 1</li>
-                      <li>Classification - Case Study 2</li>
-                      <li>Ensemble Models - Case Study 3</li>
-                      <li>Text Mining - Case Study 4</li>
-                    </ul>
-                    <div class="fees">
-                      <span class="font-weight-bold">Course Duration - 3 weeks</span><br>
-                      <span class="font-weight-bold">Level - Expert</span><br>
-                      <span class="font-weight-bold">Course Fees - 8000 INR + GST</span>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a role="button" target="_blank" href="https://forms.gle/7gTWHa3UxagRhS3d7"
-                      class="btn btn-primary">Register</a>
-                  </div>
-                </div>
-              </div>
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #5b247a 0%,#1bcedf 100%);">
+            <h6 class="card-header">Executive Search</h6>
+            <div class="card-body">
+              <p class="card-text">We help world-class build leadership teams that succeed.
+                Leadership requirements continue to evolve, but the need for high-performing executives remains constant. Identifying and attracting this talent requires a rigorous approach, a thorough understanding of different industries and functional roles, unrivaled access to senior executives and impeccable judgment. HR India Solutions apply real insight into clients’ strategic requirements and proven assessment tools to recruit leaders who have the necessary skill, experience and personal qualities to advance company strategies and achieve outstanding results. </p>
+            <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
             </div>
-            <!-- Modal data end -->
           </div>
         </div>
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);">
+            <h6 class="card-header">HR Advisory and Consulting</h6>
+            <div class="card-body">
+              <p class="card-text">You are Good at your business & we are at ours. HR is a specialized function & its best left to those who understand the
+                nuances of employee behavior. <br> <br> Startups are different corporate animals each having a different vision & a different way to do business. Some of the challenges they face are non existent for established players. It can be difficult to hire, decide on compensation strategies, understand the compli
+                ance issues & much more We help you to build “a today” for tomorrow. We proudly enjoy a 100% costumer satisfaction ratings with our existing clients .</p>
+            <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #65799b 0%,#5e2563 100%);">
+            <h6 class="card-header">Campus Hiring Solutions</h6>
+            <div class="card-body">
+              <p class="card-text">Our Campus Placement & Pre-Placement Training vertical provides unique and unmatched services aiming to benefit Corporate, Institutes/Colleges and Students equally. <br>
+                We take an exhaustive but intensive approach right from evaluation of graduating students to recommending pre-placement training ensuring students getting their dream job during campus recruitment, recommending & ensuring availability of best Campuses to organization enabling them to get required talented qualified pool well on time with minimum cost and working along with College to increase & improve the overall Campus Placement scenario resulting into more quality admissions.
+              </p>
+            <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-white mb-3" style="background:linear-gradient(135deg, #000000 0%,#157e03 100%);">
+           <h6 class="card-header">Contractual Staffing and Payroll</h6>
+            <div class="card-body">
+              <p class="card-text">If it's outside your scope, it's probably within ours. When your business needs extend beyond your core competencies, let the industry's expert in temporary staffing services help you to regain your focus. At HR India Solutions, our world revolves around your business. <br>
+                HR India Solutions temp staffing approach includes assisting clients in analyzing and improving their service delivery models, and identifying where temporary staffing can bring real business benefit. Our temporary staffing business solutions can help you in
+              </p> <br><br>
+            <button class="btn btn-primary"><a href="pages/Employers.html" style="text-decoration: none; color: white;">Know More</a></button>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
-  </div>
   <!--- Two Column Section -->
 
 
   <!--- Connect -->
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="container-fluid">
       <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;">
         <h1 class="text-uppercase">Our Clients</h1>
@@ -273,10 +210,19 @@
             src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
       </section>
     </div>
-  </div>
-<!-- Testimonials start -->
-
-<!-- Testimonials end -->
+  </div> -->
+<!-- Banner start -->
+    <div class="banner shadow-lg p-3 mb-0 rounded" style="background:linear-gradient(135deg, #f6ab3e 0%,#8037f6 100%);">
+        <div class="content text-center">
+          <div class="main text-center">
+            <p class="lead text-center" style="color: beige;"> <strong>5</strong> day Technical Workshop for Techy Folks and Nerdy Programmers</p>
+            <span><button class="btn btn-primary btn-sm">
+              <a href="pages/webinar.html" style="text-decoration: none; color: white;">Read More</a>
+            </button></span>
+          </div>
+        </div>
+    </div>
+<!-- Banner end -->
 
   <!-- Footer -->
   <footer class="page-footer font-small special-color-dark pt-4">
@@ -304,11 +250,11 @@
             <i class="fab fa-twitter"> </i>
           </a>
         </li>
-        <!-- <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fab fa-dribbble"> </i>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1" href="tel:7708938866">
+            <i class="fab fa-whatsapp"> </i>
           </a>
-        </li> -->
+        </li>
       </ul>
       <!-- Social buttons -->
       
