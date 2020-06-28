@@ -15,7 +15,14 @@ let dataBaseRef = firebase.database().ref('jobs');
 
 document.getElementById('jobform').addEventListener('submit', async (e) => {
     e.preventDefault();
-   uploadResume(e.target.resume.files[0], e); 
+    if(e.target.resume.files[0]){
+        uploadResume(e.target.resume.files[0], e);
+    }else{
+      let obj = buildObject(e, null)
+      saveDataToDatabase(obj); 
+      document.getElementById('jobform').style.display = 'none';
+     document.querySelector('.submit').style.display = 'block'
+    }
 });
 
 function saveDataToDatabase(data){
