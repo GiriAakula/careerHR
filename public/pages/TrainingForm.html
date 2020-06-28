@@ -12,6 +12,16 @@
     <link href="../style.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </head>
+<style>
+  .form-group.required label:after {
+content:"*";
+color:red;
+}
+.check:after {
+content:"*";
+color:red;
+}
+</style>
 <body>
 
     <!-- Navigation -->
@@ -74,31 +84,31 @@
                     <div id="progressText"></div>
                   </div>
                   <form id="training">
-                    <div class="form-group">
+                    <div class="form-group required">
                       <label for="Fullname">Name</label>
                       <input type="text" class="form-control" id="Fullname"  placeholder="Enter your name">
                       <small id="fullnameHelp" class="form-text text-muted">Enter your full name.</small>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group required">
                       <label for="phoneNumber">Phone Number</label>
                       <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
                       <small id="phoneNumberHelp" class="form-text text-muted">Enter your 10 digit phone number.</small>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group required">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group required">
                       <label for="location">Location</label>
                       <input type="text" class="form-control" id="location" placeholder="Enter your city">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group required">
                       <label for="experience">Total years of experience</label>
                       <input type="number" class="form-control" id="experience" placeholder="Enter your experience">
                     </div>
                     <div class="form-group">
-                        <label>Language</label>
+                        <label class="check">Language</label>
                         
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="pythonBeginner">
@@ -179,7 +189,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label>Preferred Time</label>
+                        <label class="check">Preferred Time</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="Weekdaybatches" id="Weekdaybatches" value="Weekdaybatches">
                             <label class="form-check-label" for="Weekdaybatches">
@@ -194,7 +204,7 @@
                             </label>
                           </div>
                       </div>
-                      <div class="form-group">
+                      <div class="form-group required">
                         <label for="technical">Any other technical course you are looking for? If Yes Mention the same</label>
                         <input type="text" class="form-control" id="technical" placeholder="Enter your preffered course">
                       </div>

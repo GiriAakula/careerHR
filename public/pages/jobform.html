@@ -13,7 +13,12 @@
     <link href="../style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </head>
-
+<style>
+    .form-group.required label:after {
+  content:"*";
+  color:red;
+}
+</style>
 <body>
 
     <!-- Navigation -->
@@ -79,75 +84,75 @@
                 <div id="progressText"></div>
             </div>
             <form id="jobform">
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="Fullname">Name</label>
                     <input type="text" class="form-control" id="Fullname" placeholder="Enter your name">
                     <small id="fullnameHelp" class="form-text text-muted">Enter your full name.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="phoneNumber">Phone Number</label>
                     <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
                     <small id="phoneNumberHelp" class="form-text text-muted">Enter your 10 digit phone number.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Enter your email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="inputState">Position Applied for</label>
                     <input id="position" type="text" class="form-control"
                         placeholder="Enter your position">
                 </div>
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="Comments">Educational Qualification</label>
                     <input id="qualification" type="text" class="form-control"
                         placeholder="Enter your highest degree">
                 </div>
                 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="experience">Total years of experience</label>
                     <input type="number" class="form-control" id="experience" placeholder="Enter your experience">
                 </div>
                       
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Name of the last Company you worked (NA if not applicable)</label>
                     <input type="text" class="form-control" id="lastcompany" placeholder="Enter your last company">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Last CTC / Last withdrawn Salary</label>
                     <input type="number" class="form-control" id="lastCTC" placeholder="Enter your current CTC">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Expected CTC / Salary</label>
                     <input type="number" class="form-control" id="expectedCTC" placeholder="Enter your Expected CTC">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Notice Period</label>
                     <input type="number" class="form-control" id="noticePeriod" placeholder="Enter in months">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Residence/Home location</label>
                     <input type="text" class="form-control" id="location" placeholder="Enter your city">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Age</label>
                     <input type="number" class="form-control" id="age" placeholder="Enter in years">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="location">Language spoken</label>
                     <input type="text" class="form-control" id="language" placeholder="Enter your language">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="technical">Date of Birth</label>
                     <input type="text" class="form-control" id="dob" placeholder="Enter in DD/MM/YYYY">
                 </div>
