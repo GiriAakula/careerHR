@@ -232,6 +232,9 @@ footer{
     #navwidth {
         width: 50%;
     }
+    #banner-text {
+        font-size: 18px !important;
+    }
 }
 
 
