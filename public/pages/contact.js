@@ -34,5 +34,6 @@ function buildObject(e){
     console.log(data)
     saveDataToDatabase(data)
     document.getElementById('success').style.display = 'block';
+    document.getElementById("contactform").reset();
 }
 
