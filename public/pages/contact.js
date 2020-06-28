@@ -25,11 +25,17 @@ function saveDataToDatabase(data){
 };
 
 function buildObject(e){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = dd + '/' + mm + '/' + yyyy;
+
     const data = {
         name : e.target.name.value,
         email : e.target.email.value,
         message: e.target.message.value,
-        date: new Date()
+        date: today
                
     };
     console.log(data)

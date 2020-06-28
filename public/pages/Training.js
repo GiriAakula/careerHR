@@ -32,6 +32,12 @@ function saveDataToDatabase(data){
 };
 
 function buildObject(e, url){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = dd + '/' + mm + '/' + yyyy;
+    
     const data = {
         name : e.target.Fullname.value,
         phone : e.target.phoneNumber.value,
@@ -56,7 +62,8 @@ function buildObject(e, url){
         },
         optionalCourse: e.target.technical.value,
         comments:e.target.Comments.value,
-        resume: url
+        resume: url,
+        date: today
     };
     return data;
 }
