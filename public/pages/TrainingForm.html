@@ -187,6 +187,18 @@ color:red;
                                 HTML for Kids (Std 6 to Std 10)
                             </label>
                         </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="other">
+                            <label class="form-check-label" for="other">
+                                Other
+                            </label>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group required">
+                        <label for="technical">Any other technical course you are looking for? If Yes Mention the same</label>
+                        <input type="text" class="form-control" id="technical" placeholder="Enter your preffered course">
                       </div>
                       <div class="form-group">
                         <label class="check">Preferred Time</label>
@@ -203,15 +215,18 @@ color:red;
                                 Weekend batches
                             </label>
                           </div>
-                      </div>
-                      <div class="form-group required">
-                        <label for="technical">Any other technical course you are looking for? If Yes Mention the same</label>
-                        <input type="text" class="form-control" id="technical" placeholder="Enter your preffered course">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nopreference" id="nopreference" value="No Preference">
+                            <label class="form-check-label" for="nopreference">
+                                No Preference
+                            </label>
+                          </div>
                       </div>
                       <div class="form-group">
                         <label for="Comments">Comments</label>
                         <input type="text" class="form-control" id="Comments" placeholder="Enter your Comments">
                       </div>
+                      
                       <div class="form-group">
                         <label for="resume">Resume</label>
                         <input type="file" class="form-control-file" id="resume">

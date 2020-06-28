@@ -37,7 +37,7 @@ function buildObject(e, url){
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
     today = dd + '/' + mm + '/' + yyyy;
-    
+
     const data = {
         name : e.target.Fullname.value,
         phone : e.target.phoneNumber.value,
@@ -55,10 +55,12 @@ function buildObject(e, url){
             CMAdvanced : e.target.CMAdvanced.checked,
             CMDemo : e.target.CMDemo.checked,
             HTML : e.target.HTML.checked,
+            other : e.target.other.checked
         },
         preferredTime :{
             weekday: e.target.Weekdaybatches.checked,
-            weekend: e.target.Weekendbatches.checked
+            weekend: e.target.Weekendbatches.checked,
+            nopreference: e.target.nopreference.checked,
         },
         optionalCourse: e.target.technical.value,
         comments:e.target.Comments.value,
