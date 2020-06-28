@@ -24,6 +24,12 @@ function saveDataToDatabase(data){
 };
 
 function buildObject(e){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = dd + '/' + mm + '/' + yyyy;
+
     const data = {
         firstname : e.target.firstname.value,
         lastname : e.target.lastname.value,
@@ -32,7 +38,8 @@ function buildObject(e){
         position: e.target.position.value,
         company: e.target.company.value,
         comments : e.target.comments.value,
-        talent: e.target.talent.value,        
+        talent: e.target.talent.value,  
+        date: today      
     };
     saveDataToDatabase(data)
     document.getElementById('employers').style.display = 'none';
