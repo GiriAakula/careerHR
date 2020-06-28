@@ -29,6 +29,7 @@ function buildObject(e){
         name : e.target.name.value,
         email : e.target.email.value,
         message: e.target.message.value,
+        date: new Date()
                
     };
     console.log(data)
